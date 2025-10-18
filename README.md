@@ -2,12 +2,12 @@
 
 ## 👩‍💻 Candidate Details
 **Name:** R Devika  
-**Date:** October 2025  
+**Date:** 17 October 2025  
 **Task:** Java backend and REST API example
 
 ---
 
-## 📘 Project Overview
+## 📘Overview
 
 This project implements a simple **Spring Boot REST API** to manage "Task" objects.  
 Each Task can be created, searched, deleted, and executed. When executed, it stores a `TaskExecution` record containing the command output, start time, and end time.
@@ -38,8 +38,12 @@ The backend uses **MongoDB Atlas** for data persistence.
 ---
 
 ## 🗄️ MongoDB Connection (application.properties)
+
+I used MongoDB Atlas which is primarily an online, a multi-cloud database service by the same people that build MongoDB.
 ```properties
-spring.data.mongodb.uri=mongodb+srv://<username>:<password>@cluster1.1qoqukt.mongodb.net/kaiburr?retryWrites=true&w=majority&appName=Cluster1
+spring.data.mongodb.uri=<connection_url from MongoDB>
 spring.application.name=kaiburr-task
 server.port=8080
+```
+## Outputs after testing the APIs on Postman:
 ![alt text](<PUT_tasks.png>)
